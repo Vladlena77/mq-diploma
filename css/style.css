@@ -1,12 +1,50 @@
+@font-face {
+
+    src: url('../sources/fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../sources/fonts/OpenSans-Regular.woff') format('woff'),
+    url('../sources/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    src: url('../sources/fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../sources/fonts/OpenSans-Bold.woff') format('woff'),
+    url('../sources/fonts/OpenSans-Bold.ttf') format('truetype');
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /*
     Первый экран - шапка
 */
-header {
-
+header.header {
+    background-color: #0a0e34;
+    background-image: url(https://a.icons8.com/pYtjdeqW/9wjXjW/group.png);
+    background-position-x: center;
+    background-position-y: top;
+    height: 100vh;
+    color: white;
 }
 
 .logo {
-
+    background-color: white;
+    -webkit-mask-image: url(../sources/svg/surface_logo_text.svg);
+    mask-image: url(../sources/svg/surface_logo_text.svg);
+    /* 972 x 264 */
+    width: 191px;
+    height: 52px;
 }
 
 h1 {
